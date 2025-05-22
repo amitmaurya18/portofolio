@@ -1,0 +1,47 @@
+/* Ensures the entire layout is structured properly */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Makes Header stay on top */
+  height: 100vh;
+}
+
+/* Fixes the Header at the Top */
+.header {
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  left: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+/* Push content below the fixed Header */
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Push content down to avoid being hidden under header */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  height: calc(100vh - 60px); /* Full height below header */
+  position: fixed;
+  left: 0;
+  top: 60px; /* Start below the header */
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Push content to the right of sidebar */
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}

@@ -1,0 +1,25 @@
+.home {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .home h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .home p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .profile-img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff9800;
+  }
+  
